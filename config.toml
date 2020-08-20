@@ -1,0 +1,59 @@
+baseURL = "https://ecstatic-beaver-76b370.netlify.app/"
+languageCode = "en-us"
+title = "Principal Economics"
+theme = "hugo-hero-theme"
+
+[params]
+  google_analytics_id=""
+
+  [params.homepage_meta_tags]
+    meta_description = "At Principal Economics we help our clients to find practical robust solutions in a timely manner by prioritising clients’ problem, using frontier economic thinking and our familiarity with a wide range of data and frontier methodologies."
+    meta_og_title = "Principal Economics"
+    meta_og_type = "website"
+    meta_og_url = "http://www.principaleconomics.com"
+    meta_og_image = ""
+    meta_og_description = ""
+    meta_twitter_card = ""
+    meta_twitter_site = ""
+    meta_twitter_creator = ""
+
+[[menu.main]]
+    identifier = "services"
+	name = "Services"
+	url = "/services/"
+    weight = 1
+
+    [[menu.main]]
+        identifier = "services1"
+        name = "Services"
+        url = "/services/cost-benefit-analysis"
+        parent = "services"
+        weight = 1
+
+[[menu.main]]
+    identifier = "work"
+    name = "Work"
+    url = "/Work/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
